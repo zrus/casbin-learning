@@ -1,0 +1,108 @@
+p, global_domain_admin, domains_manage_group, (GET)|(POST)|(PUT)
+p, global_domain_admin, accounts_manage_group, (GET)|(POST)|(PUT)
+p, global_domain_admin, users_manage_group, (GET)|(POST)|(PUT)
+p, global_domain_admin, devices_manage_group, (GET)|(POST)|(PUT)
+p, global_domain_admin, devices_stats_group, GET
+p, global_domain_admin, camera_groups_manage_group, (GET)|(POST)|(PUT)|(DELETE)
+p, global_domain_admin, servers_manage_group, (GET)|(POST)|(PUT)
+p, global_domain_admin, alarms_manage_group, (GET)|(POST)|(PUT)|(DELETE)
+p, global_domain_admin, services_manage_group, (GET)|(POST)|(PUT)
+p, global_domain_admin, permissions_manage_group, (GET)|(POST)|(PUT)|(DELETE)
+p, global_domain_admin, user_group, (GET)|(PUT)|(DELETE)
+
+p, global_account_admin, accounts_manage_group, (GET)|(POST)|(PUT)
+p, global_account_admin, users_manage_group, (GET)|(POST)|(PUT)
+p, global_account_admin, devices_manage_group, (GET)|(POST)|(PUT)
+p, global_account_admin, camera_groups_manage_group, (GET)|(POST)|(PUT)|(DELETE)
+p, global_account_admin, alarms_manage_group, (GET)|(POST)|(PUT)|(DELETE)
+p, global_account_admin, user_group, (GET)|(PUT)|(DELETE)
+
+p, global_account_support, users_manage_group, (GET)|(POST)|(PUT)
+p, global_account_support, devices_manage_group, (GET)|(POST)|(PUT)
+p, global_account_support, camera_groups_manage_group, (GET)|(POST)|(PUT)|(DELETE)
+p, global_account_support, alarms_manage_group, (GET)|(POST)|(PUT)|(DELETE)
+p, global_account_support, user_group, (GET)|(PUT)|(DELETE)
+
+p, global_engineering_admin, domains_manage_group, (GET)|(POST)|(PUT)
+p, global_engineering_admin, accounts_manage_group, (GET)|(POST)|(PUT)
+p, global_engineering_admin, users_manage_group, (GET)|(POST)|(PUT)
+p, global_engineering_admin, devices_manage_group, (GET)|(POST)|(PUT)
+p, global_engineering_admin, devices_stats_group, GET
+p, global_engineering_admin, camera_groups_manage_group, (GET)|(POST)|(PUT)|(DELETE)
+p, global_engineering_admin, servers_manage_group, (GET)|(POST)|(PUT)
+p, global_engineering_admin, alarms_manage_group, (GET)|(POST)|(PUT)|(DELETE)
+p, global_engineering_admin, services_manage_group, (GET)|(POST)|(PUT)
+p, global_engineering_admin, permissions_manage_group, (GET)|(POST)|(PUT)|(DELETE)
+p, global_engineering_admin, device_types_manage_group, (GET)|(POST)|(PUT)
+p, global_engineering_admin, alarm_types_manage_group, (GET)|(POST)|(PUT)
+p, global_engineering_admin, account_types_manage_group, (GET)|(POST)|(PUT)
+p, global_engineering_admin, server_types_manage_group, (GET)|(POST)|(PUT)
+p, global_engineering_admin, data_centers_manage_group, (GET)|(POST)|(PUT)|(DELETE)
+p, global_engineering_admin, user_group, (GET)|(PUT)|(DELETE)
+
+p, domain_account_admin, accounts_manage_group, (GET)|(POST)|(PUT)
+p, domain_account_admin, users_manage_group, (GET)|(POST)|(PUT)
+p, domain_account_admin, devices_publish_group, (GET)|(PUT)
+p, domain_account_admin, camera_groups_manage_group, (GET)|(POST)|(PUT)|(DELETE)
+p, domain_account_admin, user_group, (GET)|(PUT)|(DELETE)
+
+p, domain_user_admin, users_publish_group, (GET)|(PUT)
+p, domain_user_admin, user_group, (GET)|(PUT)|(DELETE)
+
+p, domain_alarm_admin, alarms_manage_group, (GET)|(POST)|(PUT)|(DELETE)
+p, domain_alarm_admin, user_group, (GET)|(PUT)|(DELETE)
+
+g2, /domains, domains_manage_group
+g2, /domains/:id, domains_manage_group
+g2, /accounts, accounts_manage_group
+g2, /users/new, users_manage_group
+g2, /users/:id, users_publish_group
+g2, /devices, devices_manage_group
+g2, /devices, devices_publish_group
+g2, /devices/stats, devices_stats_group
+g2, /camera_groups, camera_groups_manage_group
+g2, /servers, servers_manage_group
+g2, /alarms, alarms_manage_group
+g2, /services, services_manage_group
+g2, /permissions, permissions_manage_group
+g2, /device_types, device_types_manage_group
+g2, /alarm_types, alarm_types_manage_group
+g2, /account_types, account_types_manage_group
+g2, /server_types, server_types_manage_group
+g2, /data_centers, data_centers_manage_group
+g2, /data_centers/new, data_centers_manage_group
+g2, /data_centers/*, data_centers_manage_group
+g2, /users/profile, user_group
+g2, /auth/logout, user_group
+g3, /auth/login, public_action
+g3, /auth/forgot_password, public_action
+g3, /auth/new_password/:id, public_action
+
+# Eyecast admin roles group
+g, eyecast_admin, global_domain_admin
+g, eyecast_admin, global_account_admin
+g, eyecast_admin, global_account_billing
+g, eyecast_admin, global_account_support
+g, eyecast_admin, global_engineering_admin
+
+# Standard admin roles group
+g, standard_admin, domain_account_admin
+g, standard_admin, domain_user_admin
+g, standard_admin, domain_alarm_admin
+g, standard_admin, domain_service_admin
+
+# Standard user roles group
+g, standard_user, customer_archive_deletion_allowed
+g, standard_user, customer_archive_restriction
+g, standard_user, customer_billing_contact
+g, standard_user, customer_camera_privilege
+g, standard_user, customer_camera_restriction
+g, standard_user, customer_export_restriction
+g, standard_user, customer_group_privilege
+g, standard_user, customer_human_detection_notification
+g, standard_user, customer_notification
+g, standard_user, customer_playback_restriction
+g, standard_user, customer_simultaneous_login
+g, standard_user, customer_technical_contact
+g, standard_user, customer_thermal_temperature_notification
+g, standard_user, customer_user_profile_privilege

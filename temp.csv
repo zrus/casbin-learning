@@ -1,0 +1,62 @@
+g4, devices_stats_group, global_domain_admin
+g4, devices_stats_group, global_engineering_admin
+g4, devices_stats_group, domain_account_admin
+
+g4, devices_manage_group, global_domain_admin
+g4, devices_manage_group, global_account_admin
+g4, devices_manage_group, global_account_support
+g4, devices_manage_group, global_engineering_admin
+
+g4, domains_manage_group, global_domain_admin
+g4, domains_manage_group, global_engineering_admin
+
+g4, accounts_manage_group, global_domain_admin
+g4, accounts_manage_group, global_account_admin
+g4, accounts_manage_group, global_engineering_admin
+g4, accounts_manage_group, domain_account_admin
+
+g4, accounts_billing_manage_group, global_domain_admin
+g4, accounts_billing_manage_group, global_account_admin
+g4, accounts_billing_manage_group, global_engineering_admin
+g4, accounts_billing_manage_group, global_account_billing
+g4, accounts_billing_manage_group, domain_account_admin
+
+g4, users_manage_group, global_domain_admin
+g4, users_manage_group, global_account_admin
+g4, users_manage_group, global_account_support
+g4, users_manage_group, global_engineering_admin
+g4, users_manage_group, domain_account_admin
+
+g4, users_publish_group, global_domain_admin
+g4, users_publish_group, global_account_admin
+g4, users_publish_group, global_account_support
+g4, users_publish_group, global_engineering_admin
+g4, users_publish_group, domain_account_admin
+g4, users_publish_group, domain_user_admin
+
+g4, camera_groups_manage_group, global_domain_admin
+g4, camera_groups_manage_group, global_account_admin
+g4, camera_groups_manage_group, global_account_support
+g4, camera_groups_manage_group, global_engineering_admin
+g4, camera_groups_manage_group, domain_account_admin
+
+g4, servers_manage_group, global_domain_admin
+g4, servers_manage_group, global_engineering_admin
+
+g4, alarms_manage_group, global_domain_admin
+g4, alarms_manage_group, global_account_admin
+g4, alarms_manage_group, global_account_support
+g4, alarms_manage_group, global_engineering_admin
+g4, alarms_manage_group, domain_alarm_admin
+
+g4, services_manage_group, global_domain_admin
+g4, services_manage_group, global_engineering_admin
+
+g4, permissions_manage_group, global_domain_admin
+g4, permissions_manage_group, global_engineering_admin
+
+g4, device_types_manage_group, global_engineering_admin
+g4, alarm_types_manage_group, global_engineering_admin
+g4, account_types_manage_group, global_engineering_admin
+g4, server_types_manage_group, global_engineering_admin
+g4, data_centers_manage_group, global_engineering_admin
